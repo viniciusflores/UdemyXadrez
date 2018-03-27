@@ -1,8 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using Tabuleiro;
 
 namespace TESTE_Xadrez
 {
@@ -10,6 +7,11 @@ namespace TESTE_Xadrez
     {
         static void Main(string[] args)
         {
+            Posicao P = new Posicao(3, 4);
+            Console.WriteLine("posição: " + P);
+
+
+            Console.ReadLine();
         }
     }
 }
