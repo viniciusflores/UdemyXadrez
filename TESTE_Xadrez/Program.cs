@@ -1,5 +1,5 @@
 ﻿using System;
-using Tabuleiro;
+using tabuleiro;
 
 namespace TESTE_Xadrez
 {
@@ -7,8 +7,10 @@ namespace TESTE_Xadrez
     {
         static void Main(string[] args)
         {
-            Posicao P = new Posicao(3, 4);
-            Console.WriteLine("posição: " + P);
+            //Posicao P = new Posicao(3, 4);
+            //Console.WriteLine("posição: " + P);
+
+            Tabuleiro tab = new Tabuleiro(8,8);
 
 
             Console.ReadLine();
