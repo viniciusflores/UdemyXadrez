@@ -8,10 +8,17 @@ namespace xadrez
 
         private PartidaDeXadrez partida;
 
-        public Peao(Tabuleiro tab, Cor cor, PartidaDeXadrez partida) : base(tab, cor)
+        /*Jogada especial
+         * public Peao(Tabuleiro tab, Cor cor, PartidaDeXadrez partida) : base(tab, cor)
         {
             this.partida = partida;
+        }*/
+
+        public Peao(Tabuleiro tab, Cor cor) : base(tab, cor)
+        {
+            //this.partida = partida;
         }
+
 
         public override string ToString()
         {
