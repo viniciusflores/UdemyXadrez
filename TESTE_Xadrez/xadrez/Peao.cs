@@ -8,17 +8,12 @@ namespace xadrez
 
         private PartidaDeXadrez partida;
 
-        /*Jogada especial
-         * public Peao(Tabuleiro tab, Cor cor, PartidaDeXadrez partida) : base(tab, cor)
+        public Peao(Tabuleiro tab, Cor cor, PartidaDeXadrez partida) : base(tab, cor)
         {
             this.partida = partida;
-        }*/
-
-        public Peao(Tabuleiro tab, Cor cor) : base(tab, cor)
-        {
-            //this.partida = partida;
         }
 
+        
 
         public override string ToString()
         {
@@ -65,7 +60,7 @@ namespace xadrez
                 {
                     mat[pos.linha, pos.coluna] = true;
                 }
-                /*
+                
                 // #jogadaespecial en passant
                 if (posicao.linha == 3)
                 {
@@ -79,7 +74,7 @@ namespace xadrez
                     {
                         mat[direita.linha - 1, direita.coluna] = true;
                     }
-                }*/
+                }
             }
             else
             {
@@ -105,7 +100,7 @@ namespace xadrez
                     mat[pos.linha, pos.coluna] = true;
                 }
 
-                /*// #jogadaespecial en passant
+                // #jogadaespecial en passant
                 if (posicao.linha == 4)
                 {
                     Posicao esquerda = new Posicao(posicao.linha, posicao.coluna - 1);
@@ -118,7 +113,7 @@ namespace xadrez
                     {
                         mat[direita.linha + 1, direita.coluna] = true;
                     }
-                }*/
+                }
             }
 
             return mat;
